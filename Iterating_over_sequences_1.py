@@ -2,6 +2,7 @@ fruits = ["apple", "banana", "orange"]
 index = 0
 place_in_list = 0
 
+# add enumeration?
 for fruit in fruits:
     index += 1
     
