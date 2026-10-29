@@ -1,20 +1,13 @@
-"""
-lst_1 = [1, 2, 3, 4, 5, 6]
-lst_2 = [10, 20, 30, 40]
+#lst = ["red", "orange", "yellow", "green", "blue", "purple", "pink", "brown", "black", "white", "gray", "violet", "indigo", "maroon", "navy"]
+#lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+lst = "dog,cat,elephant,giraffe,lion,tiger,zebra,monkey,penguin,kangaroo,koala,panda,bear,wolf,fox"
 
-spliced_lst_1 = lst_1[0:2] + lst_1[-2:]
+lst = lst.split(",")
 
-spliced_lst_2 = lst_2[0:1] + lst_2[-1:]
+print(lst)
 
-print(spliced_lst_1)
-print(spliced_lst_2)
-"""
+lst_mid = len(lst) // 2
 
-input_list = [1, 2, 3, 4]
-
-if len(input_list) >= 5:
-    spliced_lst = input_list[0:2] + input_list[-2:]
-else:
-    spliced_lst = input_list[0:1] + input_list[-1:]
-
-print(spliced_lst)
+print(lst[1::3])
+print(lst[5::-1])
+print(lst[lst_mid::2])

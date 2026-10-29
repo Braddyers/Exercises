@@ -13,3 +13,5 @@ for i in range(len(string_1)):
     numbers_2 = " ".join(string_2)
 
 print(numbers_2)
+
+# do the same but with enumerate() function
