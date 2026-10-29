@@ -1,13 +1,17 @@
-#lst = ["red", "orange", "yellow", "green", "blue", "purple", "pink", "brown", "black", "white", "gray", "violet", "indigo", "maroon", "navy"]
-#lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-lst = "dog,cat,elephant,giraffe,lion,tiger,zebra,monkey,penguin,kangaroo,koala,panda,bear,wolf,fox"
+original_list = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15"
+#original_list = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o"
 
-lst = lst.split(",")
+original_list = original_list.split(',')
 
-print(lst)
+list1 = original_list[2::4]
 
-lst_mid = len(lst) // 2
+list2 = original_list[2:-2:]
 
-print(lst[1::3])
-print(lst[5::-1])
-print(lst[lst_mid::2])
+list3 = original_list[::-2]
+
+list4 = original_list[0:3] + original_list[-3:]
+
+print("List 1:", list1)
+print("List 2:", list2)
+print("List 3:", list3)
+print("List 4:", list4)
